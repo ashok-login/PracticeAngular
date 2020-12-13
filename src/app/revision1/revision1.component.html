@@ -1,0 +1,15 @@
+<p>revision1 works!</p>
+<h1>Today's task items for the user: {{ getName() }}</h1>
+Add New task:
+<input type="text" #taskItem class="form-control">
+<button (click)="add(taskItem.value)" class="btn btn-primary">Add Action Item</button>
+<ul *ngFor="let item of getTaskItems(); let i = index" style="list-style: none">
+    <li>
+        {{ i + 1 }} &nbsp;
+        <input type="checkbox" [(ngModel)]="item.done">&nbsp;
+        <span [ngSwitch]="item.done">
+            <span *ngSwitchCase="true"><del>{{item.action}}</del></span>
+            <span *ngSwitchDefault>{{ item.action }}</span>
+        </span>
+    </li>
+</ul>

@@ -1,0 +1,6 @@
+<p>async-pipe-demo works!</p>
+<div *ngIf="departments$ | async as departments">
+    <div *ngFor="let department of departments">
+        <li>{{ department.Name }}</li>
+    </div>
+</div>
