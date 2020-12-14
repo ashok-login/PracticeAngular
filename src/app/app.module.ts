@@ -18,6 +18,8 @@ import { TemplateReferenceVariableComponent } from './template-reference-variabl
 import { CourseComponent } from './course/course.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { PropertyBindingExample01Component } from './property-binding-example01/property-binding-example01.component';
+import { ClassBindingExampleComponent } from './class-binding-example/class-binding-example.component';
+import { DataBindingExample01Component } from './data-binding-example01/data-binding-example01.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PropertyBindingExample01Component } from './property-binding-example01/
     TemplateReferenceVariableComponent,
     CourseComponent,
     CourseDetailComponent,
-    PropertyBindingExample01Component
+    PropertyBindingExample01Component,
+    ClassBindingExampleComponent,
+    DataBindingExample01Component
   ],
   imports: [
     BrowserModule,

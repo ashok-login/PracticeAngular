@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PracticeAngular"
+    }
+  },
+  "defaultProject": "PracticeAngular",
+  "cli": {
+    "analytics": false
+  }
 }
