@@ -7,7 +7,14 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ClassBindingExampleComponent implements OnInit {
   public successClass = "text-success";
-  public hasError = true;
+  public hasError = false;
+  public isSpecial = true;
+  public messageClases = {
+    "text-success": !this.hasError,
+    "text-danger": this.hasError,
+    "text-special": this.isSpecial
+  };
+
   constructor() {}
 
   ngOnInit() {}
