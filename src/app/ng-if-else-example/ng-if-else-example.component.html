@@ -1,0 +1,9 @@
+<h1 *ngIf="showCompanyName; then thenBlock; else elseBlock"></h1>
+
+<ng-template #thenBlock>
+    <h2>TollPlus India Pvt.Ltd.</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>Name is Hidden</h2>
+</ng-template>

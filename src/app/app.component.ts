@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PracticeAngular';
+  public name = "TollPlus India Pvt.Ltd.";
 }
